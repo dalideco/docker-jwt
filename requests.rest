@@ -1,15 +1,15 @@
-GET http://localhost:80/admin
+GET http://localhost:3000/admin
 
 ###
-GET http://localhost:80/database-admin
+GET http://localhost:3000/database-admin
 
 ###
-GET http://localhost:5000/
+GET http://localhost:3000/
 Content-Type: application/json
-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpleHVzIiwibG9nVGltZSI6IjEwLzcvMjAyMSwgNzoxMTo0NiBQTSIsImlhdCI6MTYzMzYzMDMwNn0.5MrdRrbHkZUeQU4MtoNfgYdKgHp6TkPF9LFlkYJsT6A
+token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpleHVzIiwibG9nVGltZSI6IjEwLzcvMjAyMSwgMTA6MDc6NTcgUE0iLCJpYXQiOjE2MzM2NDQ0Nzd9.K4FbAfx-MqAXtoyhi8zVI8_nrQnKNw0Vzf-dGte2Rf0
 
 ###
-POST http://localhost:5000/signin
+POST http://localhost:3000/signin
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:80/signup
+POST http://localhost:3000/signup
 Content-Type: application/json
 
 {
