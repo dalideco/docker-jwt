@@ -7,7 +7,7 @@ const PORT = 3000;
 const SECRET_KEY = process.env.SECRET_ACCESS_KEY;
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://mongodb:27017/hello');
+mongoose.connect('mongodb://mongo:27017/hello');
 
 const userSchema= new mongoose.Schema({
     name:String,

@@ -6,14 +6,14 @@ GET http://localhost:3000/database-admin
 ###
 GET http://localhost:3000/
 Content-Type: application/json
-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InpleHVzIiwibG9nVGltZSI6IjEwLzcvMjAyMSwgMTA6MDc6NTcgUE0iLCJpYXQiOjE2MzM2NDQ0Nzd9.K4FbAfx-MqAXtoyhi8zVI8_nrQnKNw0Vzf-dGte2Rf0
+token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRhbGkiLCJsb2dUaW1lIjoiMTAvMTIvMjAyMSwgNDoyMTo0MSBQTSIsImlhdCI6MTYzNDA1NTcwMn0.PCPpxmKhcu_iywExBDxqKtV2efmBaQvaUTJtoQYo3Zg
 
 ###
 POST http://localhost:3000/signin
 Content-Type: application/json
 
 {
-    "username":"zexus",
+    "username":"dali",
     "password":"thisiszexus"
 }
 
@@ -22,6 +22,6 @@ POST http://localhost:3000/signup
 Content-Type: application/json
 
 {
-    "username":"zexus",
+    "username":"dali",
     "password":"thisiszexus"
 }

@@ -1,4 +1,5 @@
 version: '3.4'
+
 services:
   app:
     container_name: docker-node-mongo
@@ -6,16 +7,22 @@ services:
     build: .
     ports: 
       - '3000:3000'
-    volumes:
-      - .:/usr/src/app
-    links: 
-      - mongodb
-  mongodb: 
+    volumes: 
+      - '.:/usr/src/app'
+    networks:
+      - node-app
+    depends_on: 
+      - mongo
+  mongo: 
     image: mongo:latest
     ports:
       - '27017:27017'
-    volumes:
-      - data:/data/db
-
+    volumes: 
+      - 'data:/data/db'
+    networks:
+      - node-app
+networks: 
+  node-app:
+    driver: bridge
 volumes:
   data:
